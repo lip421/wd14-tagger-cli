@@ -133,8 +133,8 @@ def setup_args() -> argparse.ArgumentParser:
     args.add_argument(
         '--batch_size',
         type=int,
-        default=1,
-        help='batch size for inference, default is 1.'
+        default=4,
+        help='batch size for inference, default is 4.'
     )
     args.add_argument(
         '--model_name',
@@ -243,8 +243,8 @@ def setup_args() -> argparse.ArgumentParser:
     args.add_argument(
         '--threshold',
         type=float,
-        default=0.35,
-        help='threshold of confidence to add a tag, default value is 0.35.'
+        default=0.25,
+        help='threshold of confidence to add a tag, default value is 0.25.'
     )
     args.add_argument(
         '--general_threshold',
